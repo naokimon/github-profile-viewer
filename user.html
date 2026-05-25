@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="title">User Page</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+    <header class="user-page-header">
+        <a href="index.html">
+            ← Go back to home
+        </a>
+
+        <span>
+            GitHub Profile Viewer
+        </span>
+    </header>
+
+    <main class="user-main">
+        <section class="user-dashboard">
+            <article class="dashboard-username">
+                <div class="profile-picture" id="profilePicture">
+                    
+                </div>
+
+                <div class="username-column">
+                    <span id="fullName">
+                        Loading...
+                    </span>
+
+                    <span id="username">
+                        Loading..
+                    </span>
+                
+
+                <a href="https://github.com/johndoe0001" target="_blank" class="dashboard-button" id="githubLink">
+                    Go to real GitHub
+                </a>
+            </article>
+
+            <section class="user-dashboard-info">
+                <article class="dashboard-info-list">
+                    <header class="info-list-header">
+                        Repositories
+                    </header>
+                    <ul class="info-list" id="repos">
+                    </ul>
+                </article>
+                <article class="dashboard-info-list">
+                    <header class="info-list-header">
+                        Stars
+                    </header>
+                    <ul class="info-list" id="stars">
+                    </ul>
+                </article>
+            </section>
+        </section>
+
+        <footer class="footer">
+            <span>
+                &copy; 2026 Nathan Cruz Martinez
+            </span>
+        </footer>
+    </main>
+
+    <script src="scripts/searchUser.js" type="module"></script>
+</body>
+</html>
