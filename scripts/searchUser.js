@@ -18,6 +18,11 @@ async function loadUser() {
     const headers = { Authorization: `token ${API_TOKEN}` };
     const searchRes = await fetch(`https://api.github.com/search/users?q=${user}`, { headers });
     const searchData = await searchRes.json();
+
+    if (searchData.items[0] == undefined) {
+        document.getElementById("main").innerHTML = `${user} was not found!`
+    }
+    
     const login = searchData.items[0].login;
 
     const userRes = await fetch(`https://api.github.com/users/${login}`, { headers });
