@@ -33,7 +33,6 @@ async function loadUser() {
 
     const starredRes = await fetch(`https://api.github.com/users/${login}/starred`, { headers });
     const starredData = await starredRes.json();
-    console.log(starredData);
 
     const data = { login, userData, repositoryData, starredData };
     sessionStorage.setItem(cacheKey, JSON.stringify(data));

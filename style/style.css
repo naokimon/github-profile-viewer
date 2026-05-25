@@ -264,7 +264,7 @@ body {
 
 .repository {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     height: 5vh;
     width: 100%;
     gap: 1vw;
